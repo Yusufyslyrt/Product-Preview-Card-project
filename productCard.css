@@ -1,0 +1,118 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.boxes{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+}
+.box1{
+    border-radius: 1.2em 0 0 1.2em;
+}
+.box2{
+    border-radius: 0 1.2em 1.2em 0;
+}
+.box{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    overflow: hidden;
+}
+.box1>img{
+    width: 100%;
+}
+.box>.paragraph>p{
+    font-size:1.1em;
+    color: grey;
+    font-weight:500;
+}
+.box>.price>p{
+    font-size:2.5em;
+    color: green;
+    font-weight:bold;
+}.box>.price>p>del{
+    font-size:0.6em !important;
+    color: grey;
+    font-weight:bold;
+}
+.box2{
+    flex-direction:column;
+    justify-content: space-around;
+    background-color:white;
+    padding: 2.5em;
+}
+.header>h4{
+    font-size: 1em;
+    letter-spacing: 0.6em;
+    color: grey;
+    margin-bottom: 1.5em;
+}
+.header>h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.button>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    padding: 1em;
+    background-color: #3d8168;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+}
+.button :hover{
+    cursor: pointer;
+    background-color: #376f5a;
+}
+ 
+  @media (min-width: 481px) and (max-width: 1023px) {
+    .boxes{
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        height: 70%;       
+    }
+    .box{
+        overflow:visible;
+    }
+    .box1>img{
+        content: url("image-product-mobile.jpg");
+        border-radius:1em 1em 0 0;
+    }
+    .box1{
+        border-radius: 1em 1em 0 0;
+    }
+    .box2{
+        border-radius: 0 0 1em 1em;
+        height: 100%;
+        gap: 1em;
+    }
+
+  }
+  
